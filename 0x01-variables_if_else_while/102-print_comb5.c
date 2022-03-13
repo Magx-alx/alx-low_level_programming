@@ -1,37 +1,44 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabets in lovercase
- * followed by new line
- * Return: Always 0 (Success)
+ * main - program entry
+ *
+ * Description: print all possible combo of two 2-digit numbers
+ *
+ * Return: 0
  */
 
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int i, j;
+	int a, b, c, d;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j =0; j < 10; j++)
+		a = i / 10; /* tens firstnum */
+		b = i % 10; /* unit firstnum */
+
+		for (j = 0 ; j < 100; j++)
 		{
-			for (k =0; k < 10; k++)
+			c = j / 10; /* tens secondnum */
+			d = j % 10; /* unit secondnum */
+
+			if (a < c || (a == c && b < d))
 			{
-				for (l = j + 1; l < 10; l++)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(' ');
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(l + '0');
 					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }

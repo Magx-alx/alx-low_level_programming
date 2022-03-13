@@ -1,8 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - main function
+ *
+ * Description: the main function
+ * puts text to stout.
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;

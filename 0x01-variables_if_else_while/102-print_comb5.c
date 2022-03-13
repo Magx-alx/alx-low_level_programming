@@ -17,13 +17,13 @@ int main(void)
 	{
 		for (j =0; j < 10; j++)
 		{
-			putchar(i + '0');
-			putchar(j + '0');
-			putchar(' ');
 			for (k =i; k < 10; k++)
 			{
 				for (l = k + 1; l < 10; l++)
 				{
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
 					putchar(k + '0');
 					putchar(l + '0');
 					putchar(',');

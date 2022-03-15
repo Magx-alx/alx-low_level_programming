@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	print_alpahbets();
+	print_alpahbet();
 	return (0);
 }

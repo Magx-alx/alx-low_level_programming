@@ -9,16 +9,6 @@
 
 int main(void)
 {
-	char ch;
-
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		_putchar(ch);
-	}
-	_putchar('\n');
+	print_alpahbets();
 	return (0);
-}
-void _putchar(char c)
-{
-	putchar(c);
 }

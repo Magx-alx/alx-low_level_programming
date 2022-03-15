@@ -9,5 +9,6 @@
 
 int main ()
 {
-	printf("magx");
+	print_alphabet();
+	return (0);
 }

@@ -9,15 +9,6 @@
 
 int main(void)
 {
-	char text[8] = "_putchar";
-	
-	for (int i = 0; i < 8; i++)
-	{
-		_putchar(text[i]);
-	}
+	printf("_putchar\n");
 	return (0);
-}
-void _putchar(char c)
-{
-	putchar(c);
 }

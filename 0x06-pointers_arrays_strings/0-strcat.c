@@ -17,6 +17,7 @@ char *_strcat(char *a,char *b)
     {
         a[l1 + i] = b[i];
     }
+    a[l1 + i] = b[i];
     return (a);
 }
 

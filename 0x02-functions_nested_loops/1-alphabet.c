@@ -1,24 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main Entry point 
+ * print_alphabet - print alphabet lowercase
  *
- * return: 0 Always (Success)
+ * Return: Always 0.
  */
 
-int main ()
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+char alphabet;
+
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+_putchar(alphabet);
 }
-void print_alphabet (void)
-{
-	char c = 'a';
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
+
+_putchar('\n');
+
 }
